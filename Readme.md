@@ -1,4 +1,4 @@
-# Личный проект «Барбершоп» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Барбершоп-адаптив» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент:  [Светлана Ощепкова](https://up.htmlacademy.ru/adaptive/12/user/398413).
 * Наставник:  без наставника.
