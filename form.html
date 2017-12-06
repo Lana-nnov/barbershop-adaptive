@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.js" async=""></script>
+    <title>Интернет-магазин "Барбершоп"</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          Открыть меню
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Наши работы
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Записаться
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Контакты
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">
+                Войти
+              </a>
+            </li>
+          </ul>
+        </div>  
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="form-header">
+        <h1 class="form-header__inner">Запись на стрижку</h1>
+        <a class="form-header__link button" href="#">На главную</a>
+      </div>
+      <form class="form-order" method="get" action="https://echo.htmlacademy.ru">
+        <div class="form-order__wrapper">
+          <h1 class="form-order__inner">Запись на стрижку</h1>
+          <a class="form-order__link button" href="#">На главную</a>
+        </div>
+        <fieldset class="form-order__field">
+          <div class="form-order__name-info">
+            <label class="form-order__text" for="name-field">Имя:</label>
+            <input class="form-order__fullname" type="text" name="name" id="name-field" placeholder="Имя">
+          </div>
+          <div class="form-order__name-info">
+            <label class="form-order__text" for="surname-field">Фамилия:</label>
+            <input class="form-order__fullname" type="text" name="surname" id="surname-field" placeholder="Фамилия">
+          </div>
+          <div class="form-order__name-info">
+            <label class="form-order__text" for="patronymic-field">Отчество:</label>
+            <input class="form-order__fullname" type="text" name="patronymic" id="patronymic-field" placeholder="Отчество">
+          </div>
+        </fieldset>
+        <fieldset class="form-order__field">
+          <div class="form-order__phone-info">
+            <label class="form-order__text" for="phone-field">Телефон:</label>
+            <input class="form-order__contacts" type="text" name="phone" id="phone-field" placeholder="Контактный телефон">
+          </div>
+        </fieldset>
+        <fieldset class="form-order__field">
+          <div class="form-order__email-info">
+            <label class="form-order__text" for="name-field">Email:</label>
+            <input class="form-order__email" type="text" name="email" id="email-field" placeholder="Контактный email">
+          </div>
+        </fieldset>
+        <fieldset class="form-order__field">
+          <textarea class="form-order__message" id="review-field" name="review" placeholder="Доп. информация для мастера"></textarea>
+          <label class="form-order__text" for="review-field">Текст сообщения:</label>
+        </fieldset>
+        <fieldset class="form-order__field">
+          <h2 class="form-order__name">Выберите модель бороды:</h2>
+          <p class="form-order__inner">
+            <input class="form-order__radio form-order__radio--admiral" type="radio" name="type" id="admiral-field" value="admiral">
+            <label class="form-order__choice" for="admiral-field">Адмирал</label>
+            <input class="form-order__radio form-order__radio--lesorub" type="radio" name="type" id="lesorub-field" value="lesorub">
+            <label class="form-order__choice" for="lesorub-field">Лесоруб</label>
+            <input class="form-order__radio form-order__radio--polyarnik" type="radio" name="type" id="polyarnik-field" value="polyarnik">
+            <label class="form-order__choice" for="polyarnik-field">Полярник</label>
+            <input class="form-order__radio form-order__radio--boyarin" type="radio" name="type" id="boyarin-field" value="boyarin">
+            <label class="form-order__choice" for="boyarin-field">Боярин</label>
+            <input class="form-order__radio form-order__radio--mudrec" type="radio" name="type" id="mydrec-field" value="mydrec">
+            <label class="form-order__choice" for="mydrec-field">Мудрец</label>
+          </p>
+        </fieldset>
+        <fieldset class="form-order__field">
+          <h2 class="form-order__name">Дополнительные услуги:</h2>
+          <p class="form-order__inner">
+            <input class="form-order__radio" type="checkbox" name="color-beard" id="color-beard-field">
+            <label class="form-order__choice" for="color-beard-field">Подкрасить бороду</label>
+            <input class="form-order__radio" type="checkbox" name="gray" id="gray-field">
+            <label class="form-order__choice" for="gray-field">Убрать седину</label>
+            <input class="form-order__radio" type="checkbox" name="type" id="local-field">
+            <label class="form-order__choice" for="local-field">Подравнять виски</label>
+            <input class="form-order__radio" type="checkbox" name="comb-beard" id="comb-beard-field">
+            <label class="form-order__choice" for="comb-beard-field">Причесать бороду</label>
+            <input class="form-order__radio" type="checkbox" name="mystech" id="mystech-field">
+            <label class="form-order__choice" for="mystech-field">Накрутить усы</label>
+            <input class="form-order__radio" type="checkbox" name="calvity" id="calvity-field">
+            <label class="form-order__choice" for="calvity-field">Отполировать лысину</label>
+          </p>
+        </fieldset>
+        <button class="form-order__send" type="submit">Отправить заявку</button>
+      </form>    
+	  </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <b class="contacts__title">
+            Барбершоп "Бородинский"
+          </b>
+          <p class="contacts__text">
+            г.Санкт-Петербург, ул. Большая Конюшенная, 19/8
+            <a class="contacts__phone" href="tel:+78125556666">
+              <span class="contacts__phone-mobile">
+                Тел.:</span> 555-66-66
+            </a>
+          </p>
+        </div>
+        <div class="page-footer__social socail">
+          <b class="social__title">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                Мы вконтакте
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                Мы в фейсбуке
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="#">
+                Мы в инстаграмме
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">
+            Разработано:
+          </b>
+          <a class="copyright__link button" href="#">
+            HTML-academy
+          </a>
+        </div>
+      </div>  
+    </footer>
+  </body>
+</html>
